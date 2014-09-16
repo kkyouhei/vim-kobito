@@ -1,0 +1,32 @@
+<?php
+class SuperProgram{
+	private $varInt;
+	private $varString;
+
+	function __construct(){
+		$this->varInt = 1;
+		$this->varString = 1;
+	}
+
+	public function main(){
+		echo 'main!!!';
+	}
+
+	public function callVarInt(){
+		return $varInt;
+	}
+
+	public function callVarString(){
+		return $varString;
+	}
+
+	public function fileCp(){
+		if(rename('test.jpg','test2.jpg')){
+			echo 'ファイルをコピーしました';
+		}else{
+			echo 'ファイルをコピーできませんでした';
+		}
+	}
+}
+?>
+
